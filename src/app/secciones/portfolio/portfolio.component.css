@@ -1,0 +1,99 @@
+/* Portfolio Section
+#portfolio {
+	padding: 40px 0 100px 0;
+}
+.categories {
+	margin-bottom: 80px;
+}
+ul.cat li {
+	display: inline-block;
+}
+ol.type li {
+	display: inline-block;
+	margin-right: 20px;
+}
+ol.type li a {
+	font-family: 'Montserrat', sans-serif;
+	color: #444;
+	font-size: 14px;
+	padding: 10px 20px;
+	border: 2px solid #444;
+	border-radius: 0;
+	text-transform: uppercase;
+}
+ol.type li a.active {
+	background: #444;
+	color: #eee;
+}
+ol.type li a:hover {
+	background: #444;
+	color: #eee;
+}
+.isotope-item {
+	z-index: 2
+}
+.isotope-hidden.isotope-item {
+	z-index: 1
+}
+.isotope, .isotope .isotope-item {
+
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+.isotope-item {
+	margin-right: -1px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	padding: 0 10px;
+}
+.isotope {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	transition-property: height, width;
+}
+.isotope .isotope-item {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property: -moz-transform, opacity;
+	transition-property: transform, opacity;
+}
+.portfolio-item {
+	margin: 10px 0;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+.portfolio-item .hover-bg {
+	overflow: hidden;
+	position: relative;
+}
+.hover-bg .hover-text {
+	position: absolute;
+	text-align: center;
+	margin: 0 auto;
+	color: #333;
+	background: rgba(255, 255, 255, 0.75);
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.hover-bg .hover-text .overlay-caption {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+.hover-bg .hover-text .overlay-caption .overlay-content {
+	display: table-cell;
+	vertical-align: middle;
+}
+.hover-bg:hover .hover-text {
+	opacity: 1;
+}
+*/

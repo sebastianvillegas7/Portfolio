@@ -1,0 +1,48 @@
+/* Estilos generales para el contenedor */
+
+.custom-container {
+  width: 96%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Espaciado general */
+
+
+/* Sección del Intro */
+header {
+  text-align: center;
+}
+
+/* Sección del Portafolio */
+main {
+  padding: 40px 0;
+}
+
+/* Sección de Contacto */
+section {
+  padding: 40px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0 auto;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .custom-container {
+    padding: 0 10px;
+  }
+
+  header, main, section {
+    padding: 20px 0;
+  }
+}

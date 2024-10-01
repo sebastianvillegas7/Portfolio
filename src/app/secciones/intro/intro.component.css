@@ -1,0 +1,93 @@
+/* .intro {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-family: 'Montserrat', sans-serif;
+	display: table;
+	width: 100%;
+  height: 500px;
+	margin-bottom: 80px;
+	background: url(../../../assets/img/intro-bg.jpg) no-repeat right top;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+  width: 100% !important;
+  padding-left: 60px;
+}
+
+h1 {
+  padding-top: 100px;
+	color: #c7c7c7;
+	font-size: 6em;
+	font-weight:600;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+.intro p {
+  font-family: 'Montserrat', sans-serif;
+	color: #ffffff;
+	font-size: 30px;
+} */
+/* Estilos generales para la sección Intro */
+.intro {
+  background: url(../../../assets/img/intro-bg.jpg) no-repeat right top;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.intro h1 {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin-bottom: 4px;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 60px;
+  opacity: 0.8;
+}
+
+.botones a {
+  letter-spacing: 2px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+}
+
+.botones a:hover {
+  background-color: #ffffff;
+  color: #282c34;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 2.5rem;
+  }
+
+  .intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .botones a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
