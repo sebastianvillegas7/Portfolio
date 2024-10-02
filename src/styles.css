@@ -1,4 +1,32 @@
-/* h2 {
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  margin: 0;
+  padding: 0;
+  color: #555;
+  font-weight: 400;
+  width: 100% !important;
+  height: 100% !important;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #888;
+}
+
+ul, ol {
+  list-style: none;
+}
+ul, ol {
+  padding: 0;
+  webkit-padding: 0;
+  moz-padding: 0;
+}
+h2 {
 	font-weight: 700;
 	font-size: 42px;
 	color: #454752;
@@ -70,7 +98,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 
 
-/* Footer Section
+/* Footer Section */
 #footer {
 	background: #262626;
 	padding: 50px 0 20px 0;
@@ -78,11 +106,4 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 #footer p {
 	font-size: 15px;
 	color: #666;
-} */
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
 }
