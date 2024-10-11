@@ -1,34 +1,4 @@
-/* .intro {
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-  font-family: 'Montserrat', sans-serif;
-	display: table;
-	width: 100%;
-  height: 500px;
-	margin-bottom: 80px;
-	background: url(../../../assets/img/intro-bg.jpg) no-repeat right top;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	-o-background-size: cover;
-  width: 100% !important;
-  padding-left: 60px;
-}
-
-h1 {
-  padding-top: 100px;
-	color: #c7c7c7;
-	font-size: 6em;
-	font-weight:600;
-	text-transform: uppercase;
-	margin-bottom: 0px;
-}
-.intro p {
-  font-family: 'Montserrat', sans-serif;
-	color: #ffffff;
-	font-size: 30px;
-} */
-/* Estilos generales para la sección Intro */
+/* Estilos generales para la sección Intro
 .intro {
   background: url(../../../assets/img/intro-bg.jpg) no-repeat right top;
   color: #ffffff;
@@ -38,56 +8,86 @@ h1 {
   justify-content: center;
   text-align: center;
 
+}*/
+/* Background styling */
+/* Estilos para la card personalizada */
+
+.custom-card {
+  height: 100px;
+  width: 800px;
+  opacity: 0.1;
+  background-color: rgba(128, 128, 128, 0.061);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.intro h1 {
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 5rem;
+/* Estilos generales */
+.page-header {
+  background-image: url('../../../assets/img/intro-bg.jpg');
+  background-size: cover;
+  background-position: top center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-filter {
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  font-family: 'Lucida Sans', sans-serif;
+  font-size: 3rem;
   font-weight: 800;
-  letter-spacing: 4px;
-  margin-bottom: 4px;
+  color: white;
+  letter-spacing: 6px;
 }
 
-.intro h2 {
-  font-size: 2rem;
+.profession {
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
   font-style: italic;
   font-weight: 400;
-  margin-bottom: 60px;
   opacity: 0.8;
 }
 
-.botones a {
+.botones {
+  margin-top: 100px;
+}
+
+.btn {
   letter-spacing: 2px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
   text-transform: uppercase;
+  text-decoration: none;
   color: #ffffff;
   background-color: transparent;
-  border: 2px solid #ffffff;
-  padding: 12px 25px;
-  font-size: 1.2rem;
-  margin: 0 15px;
+  border: 1px solid #1f1f1f;
+  padding: 10px 30px;
+  font-size: 1rem;
+  margin: 0 20px;
   transition: all 0.3s ease;
+  border-radius: 10px;
 }
 
-.botones a:hover {
-  background-color: #ffffff;
-  color: #282c34;
+.btn-primary {
+  border-color: #b8b8b8;
 }
 
-/* Responsividad */
-@media (max-width: 768px) {
-  .intro h1 {
-    font-size: 2.5rem;
-  }
+.btn-primary:hover {
+  background-color: rgba(80, 104, 235, 0.206);
+  color: #ffffff;
+}
 
-  .intro h2 {
-    font-size: 1.5rem;
-  }
+.btn-outline-primary {
+  color: white;
+  border-color: rgb(121, 121, 121);
+}
 
-  .botones a {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
+.btn-outline-primary:hover {
+  background-color: rgba(255, 255, 255, 0.206);
+  color: #ffffff;
 }
