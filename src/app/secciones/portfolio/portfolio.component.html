@@ -1,62 +1,35 @@
 <div id="portfolio">
   <div class="container">
-    <div class="section-title">
-      <h2>Portfolio</h2>
-    </div>
-    <div class="categories">
-      <ul class="cat">
-        <li>
-          <ol class="type">
-            <li><a href="#" data-filter="*" class="active">Todos</a></li>
-            <li><a href="#" data-filter=".lorem">MoodShare</a></li>
-            <li><a href="#" data-filter=".dolor">Dolor Sit</a></li>
-            <li><a href="#" data-filter=".adipiscing">Adipiscing Elit</a></li>
-          </ol>
-        </li>
-      </ul>
-    </div>
-    <div class="row">
-      <div class="portfolio-items">
-        <div class="col-sm-6 col-md-4 lorem">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="assets/img/portfolio/01-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <div class="overlay-caption">
-                  <div class="overlay-content">
-                    <h4>Project Name</h4>
-                  </div>
-                </div>
-              </div>
-              <img src="assets/img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+
+      <h2>PORTFOLIO</h2>
+
+      <!-- Botones que enlazan a los proyectos -->
+      <div id="portfolio__button-group">
+        <button type="button" class="btn btn-outline-dark" (click)="showProject(1)">MoodShare App</button>
+        <button type="button" class="btn btn-outline-dark" (click)="showProject(2)" style="margin-left: 10px;">Agenda App</button>
+      </div>
+
+      <div *ngIf="activeProject === null">
+        <p>Algunos de los proyectos que he realizado hasta el momento...</p>
+      </div>
+
+      <!-- Sección de proyectos -->
+      <div class="row">
+        <div *ngIf="activeProject === 1" class="col-md-6">
+          <img src="../../../assets/img/portfolio/01-large.jpg" alt="MoodShare App">
+          <div class="portfolio__project-description">
+            <h4>MoodShare App</h4>
+            <p>Aplicación de compartición de estados de ánimo en tiempo real. <a href="https://github.com/tu-usuario/moodshare-app" target="_blank">Ver en GitHub</a></p>
           </div>
         </div>
-        <div class="col-sm-6 col-md-4 adipiscing">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="assets/img/portfolio/02-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <div class="overlay-caption">
-                  <div class="overlay-content">
-                    <h4>Project Name</h4>
-                  </div>
-                </div>
-              </div>
-              <img src="assets/img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 lorem">
-          <div class="portfolio-item">
-            <div class="hover-bg"> <a href="assets/img/portfolio/03-large.jpg" title="Project Title" data-lightbox-gallery="gallery1">
-              <div class="hover-text">
-                <div class="overlay-caption">
-                  <div class="overlay-content">
-                    <h4>Project Name</h4>
-                  </div>
-                </div>
-              </div>
-              <img src="assets/img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+        <div *ngIf="activeProject === 2" class="col-md-6">
+          <img src="../../../assets/img/portfolio/04-large.jpg" alt="Agenda App">
+          <div class="portfolio__project-description">
+            <h4>Agenda App</h4>
+            <p>Aplicación de gestión de tareas y eventos. <a href="https://github.com/tu-usuario/agenda-app" target="_blank">Ver en GitHub</a></p>
           </div>
         </div>
       </div>
-    </div>
+
   </div>
 </div>

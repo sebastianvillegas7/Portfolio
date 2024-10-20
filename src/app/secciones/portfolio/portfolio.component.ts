@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent {
+  activeProject: number | null = null;
 
+  showProject(projectId: number) {
+    this.activeProject = projectId;
+  }
 }

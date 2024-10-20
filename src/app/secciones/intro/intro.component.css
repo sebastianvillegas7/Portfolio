@@ -1,18 +1,22 @@
 /* Estilos generales */
-.page-header {
+
+
+#intro {
   position: relative;
   background-image: url('../../../assets/img/intro-bg.jpg');
   background-size: cover;
-  background-position: left center;
+  background-position: center;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
+  height: 100%;
+  width: 100%;
 }
 
 /* Overlay oscuro */
-.page-header::before {
+#intro::before {
   content: '';
   position: absolute;
   top: 0;
@@ -23,11 +27,6 @@
   z-index: -1;
 }
 
-.header-filter {
-  height: 100%;
-  width: 100%;
-}
-
 .title {
   font-family: "League Spartan", sans-serif;
   font-optical-sizing: auto;
@@ -36,7 +35,6 @@
   font-size: 5rem;
   color: white;
   letter-spacing: 4px;
-  margin-bottom: -20px;
 }
 
 .profession {
@@ -55,7 +53,8 @@
 
 .btn {
   letter-spacing: 2px;
-  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  font-family: "Raleway", serif;
+  font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;

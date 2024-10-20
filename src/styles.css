@@ -1,5 +1,4 @@
 html, body {
-  font-family: 'Montserrat', sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
   margin: 0;
@@ -9,6 +8,7 @@ html, body {
   width: 100% !important;
   height: 100% !important;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 p {
@@ -21,7 +21,6 @@ p {
 /* Footer Section */
 #footer {
 	background: #262626;
-	padding: 50px 0 20px 0;
 }
 #footer p {
 	font-size: 15px;
