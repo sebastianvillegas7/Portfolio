@@ -39,7 +39,8 @@
 
 #portfolio__button-group {
   text-align: center;
-  margin-bottom: 30px;
+  color: rgb(207, 207, 207);
+  margin-bottom: 15px;
 }
 
 .row {
@@ -54,18 +55,48 @@
   margin-bottom: 60px;
 }
 
-#portfolio__project-description {
-  padding: 10px;
-  text-align: center;
+#portfolio p {
+  font-size: 20px;
 }
 
-#portfolio img {
-  max-width: 50%;
+/* Contenedor de proyectos con un tamaño fijo */
+.project-container {
+  min-height: 460px;
+  max-height: 460px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid white;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
   border-radius: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
 }
 
-#portfolio img:hover {
+.project-image img:hover {
   transform: scale(1.05);
+}
+
+/* Descripción del proyecto a la derecha */
+.portfolio__project-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  text-align: left;
+}
+
+.portfolio__project-description h4 {
+  margin-bottom: 10px;
+}
+
+.portfolio__project-description p {
+  font-size: 16px;
 }

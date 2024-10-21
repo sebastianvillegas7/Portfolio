@@ -1,35 +1,106 @@
 <div id="portfolio">
   <div class="container">
+    <h2>PORTFOLIO</h2>
+    <div id="portfolio__button-group">
+      <button type="button" class="btn"
+        [ngClass]="{'btn-dark': selectedProject === 1, 'btn-outline-light': selectedProject !== 1}"
+        (click)="showProject(1)">
+        MoodShare App
+      </button>
 
-      <h2>PORTFOLIO</h2>
+      <button type="button" class="btn"
+        [ngClass]="{'btn-dark': selectedProject === 2, 'btn-outline-light': selectedProject !== 2}"
+        (click)="showProject(2)" style="margin-left: 20px;">
+        Agenda App
+      </button>
 
-      <!-- Botones que enlazan a los proyectos -->
-      <div id="portfolio__button-group">
-        <button type="button" class="btn btn-outline-dark" (click)="showProject(1)">MoodShare App</button>
-        <button type="button" class="btn btn-outline-dark" (click)="showProject(2)" style="margin-left: 10px;">Agenda App</button>
-      </div>
+      <button type="button" class="btn"
+        [ngClass]="{'btn-dark': selectedProject === 3, 'btn-outline-light': selectedProject !== 3}"
+        (click)="showProject(3)" style="margin-left: 20px;">
+        Más...
+      </button>
+    </div>
 
-      <div *ngIf="activeProject === null">
-        <p>Algunos de los proyectos que he realizado hasta el momento...</p>
-      </div>
+<!-- Contenedor de proyectos con un tamaño fijo -->
+<div class="row project-container">
+  <!-- MoodShare App con carrusel de imágenes -->
+  <div *ngIf="selectedProject === 1" class="col-md-12 d-flex">
+    <!-- Carrusel de imágenes a la izquierda -->
+    <div class="col-md-6 project-image">
 
-      <!-- Sección de proyectos -->
-      <div class="row">
-        <div *ngIf="activeProject === 1" class="col-md-6">
-          <img src="../../../assets/img/portfolio/01-large.jpg" alt="MoodShare App">
-          <div class="portfolio__project-description">
-            <h4>MoodShare App</h4>
-            <p>Aplicación de compartición de estados de ánimo en tiempo real. <a href="https://github.com/tu-usuario/moodshare-app" target="_blank">Ver en GitHub</a></p>
+      <div id="moodshareCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="../../../assets/img/portfolio/01-large.png" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../../../assets/img/portfolio/02-large.png" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../../../assets/img/portfolio/03-large.png" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../../../assets/img/portfolio/04-large.png" alt="Fourth slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="../../../assets/img/portfolio/05-large.png" alt="Fifth slide">
           </div>
         </div>
-        <div *ngIf="activeProject === 2" class="col-md-6">
-          <img src="../../../assets/img/portfolio/04-large.jpg" alt="Agenda App">
-          <div class="portfolio__project-description">
-            <h4>Agenda App</h4>
-            <p>Aplicación de gestión de tareas y eventos. <a href="https://github.com/tu-usuario/agenda-app" target="_blank">Ver en GitHub</a></p>
-          </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#moodshareCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#moodshareCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Descripción a la derecha -->
+    <div class="col-md-6 portfolio__project-description">
+      <h4>MoodShare App</h4>
+      <p>Aplicación de compartición de estados de ánimo en tiempo real.
+        <a href="https://github.com/sebastianvillegas7" target="_blank">Ver en GitHub</a>
+      </p>
+    </div>
+  </div>
+
+      <!-- Agenda App -->
+      <div *ngIf="selectedProject === 2" class="col-md-12 d-flex">
+        <div class="col-md-6 project-image">
+          <img src="../../../assets/img/portfolio/03-large.jpg" alt="Agenda App">
+          <a href="https://github.com/tu-usuario/agenda-app" target="_blank">Ver en GitHub</a>
+        </div>
+        <div class="col-md-6 portfolio__project-description">
+          <h4>Agenda App</h4>
+          <p>Aplicación de gestión de tareas y eventos.
+          </p>
         </div>
       </div>
+
+      <!-- Proyecto adicional -->
+      <div *ngIf="selectedProject === 3" class="col-md-12 d-flex">
+        <div class="col-md-6 project-image">
+          <!-- Puedes agregar una imagen o dejar este espacio vacío -->
+        </div>
+        <div class="col-md-6 portfolio__project-description">
+          <p>Más proyectos disponibles en mi
+            <a href="https://github.com/tu-usuario" target="_blank">perfil de GitHub</a>.
+          </p>
+        </div>
+      </div>
+    </div>
 
   </div>
 </div>
