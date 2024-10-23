@@ -1,49 +1,43 @@
 <div id="contact">
   <div class="container">
-    <h2>About Me</h2>
-    <div class="col-md-6">
-      <div class="section-title">
-        <div class="row"> <img src="assets/img/about.jpg" class="img-responsive pull-left" alt="">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-          <div class="social">
-            <ul>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-behance"></i></a></li>
-              <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-              <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-            </ul>
+    <h2>CONTACTO</h2>
+
+    <div class="row">
+      <!-- Formulario a la izquierda -->
+      <div class="col-md-6">
+        <form>
+          <div class="form-group md-3">
+            <label for="name"></label>
+            <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required>
           </div>
-        </div>
+
+          <div class="form-group md-3">
+            <label for="email"></label>
+            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message"></label>
+            <textarea class="form-control" id="message" rows="4" maxlength="250" placeholder="Escribe tu mensaje (máximo 250 caracteres)" required></textarea>
+            <small class="form-text text-muted">Máximo 250 caracteres.</small>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
       </div>
-    </div>
-    <div class="col-md-5 col-md-offset-1">
-      <div class="section-title">
-        <p>For inquiries or collaborations please contact me by email at <strong>infoARROBAcompany.com</strong> or fill out the form below.</p>
-      </div>
-      <form name="sentMessage" id="contactForm" novalidate>
+
+      <!-- Imagen y texto a la derecha -->
+      <div class="col-md-6">
         <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
+          <div class="col-sm-6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at.</p>
+            <p>Para consultas o colaboraciones, por favor contáctame a través del correo <strong>infoARROBAcompany.com</strong>.</p>
           </div>
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-              <p class="help-block text-danger"></p>
-            </div>
+          <div class="col-sm-6">
+            <img src="assets/img/about.jpg" class="img-responsive" alt="Imagen sobre mí">
           </div>
         </div>
-        <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-          <p class="help-block text-danger"></p>
-        </div>
-        <div id="success"></div>
-        <button type="submit" class="btn btn-default btn-lg">Send Message</button>
-      </form>
+      </div>
     </div>
   </div>
 </div>

@@ -10,19 +10,3 @@ html, body {
   box-sizing: border-box;
   overflow-x: hidden;
 }
-
-p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  color: #888;
-}
-
-/* Footer Section */
-#footer {
-	background: #262626;
-}
-#footer p {
-	font-size: 15px;
-	color: #666;
-}

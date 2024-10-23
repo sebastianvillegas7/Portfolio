@@ -14,13 +14,18 @@
 }
 
 /* Footer */
-footer {
+#footer {
   background-color: #333;
-  color: #fff;
   width: 100%;
-  padding: 10px 0;
+  padding: 0;
 }
 
+#footer p {
+  color: #aeacac;
+  font-size: 0.7em;
+  margin: 0;
+  padding: 0;
+}
 
 /* Responsividad
 @media (max-width: 768px) {
