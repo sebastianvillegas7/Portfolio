@@ -61,15 +61,15 @@
 
 /* Contenedor de proyectos con un tamaño fijo */
 .project-container {
-  min-height: 460px;
-  max-height: 460px;
+  min-height: 400px;
+  max-height: 400px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
   box-sizing: border-box;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .project-image img {
@@ -81,7 +81,7 @@
 }
 
 .project-image img:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 /* Descripción del proyecto a la derecha */

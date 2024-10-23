@@ -21,60 +21,66 @@
       </button>
     </div>
 
-<!-- Contenedor de proyectos con un tamaño fijo -->
-<div class="row project-container">
-  <!-- MoodShare App con carrusel de imágenes -->
-  <div *ngIf="selectedProject === 1" class="col-md-12 d-flex">
-    <!-- Carrusel de imágenes a la izquierda -->
-    <div class="col-md-6 project-image">
+    <!-- Contenedor de proyectos con un tamaño fijo -->
+    <div class="row project-container">
+      <!-- MoodShare App con carrusel de imágenes -->
+      <div *ngIf="selectedProject === 1" class="col-md-12 d-flex">
+        <!-- Carrusel de imágenes a la izquierda -->
+        <div class="col-md-6 project-image" style="transform: scale(1.02); cursor: pointer;">
 
-      <div id="moodshareCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <div id="moodshareCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="0"></button>
+              <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="1" aria-label="1"></button>
+              <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="2" aria-label="2"></button>
+              <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="3" aria-label="3"></button>
+              <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="4" aria-label="4"></button>
+              <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="5" aria-label="5"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="../../../assets/img/portfolio/00-large.png" alt="0">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../../../assets/img/portfolio/01-large.png" alt="1">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../../../assets/img/portfolio/02-large.png" alt="2">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../../../assets/img/portfolio/03-large.png" alt="3">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../../../assets/img/portfolio/04-large.png" alt="4">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../../../assets/img/portfolio/05-large.png" alt="5">
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#moodshareCarousel"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#moodshareCarousel"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
         </div>
 
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="../../../assets/img/portfolio/01-large.png" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="../../../assets/img/portfolio/02-large.png" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="../../../assets/img/portfolio/03-large.png" alt="Third slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="../../../assets/img/portfolio/04-large.png" alt="Fourth slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="../../../assets/img/portfolio/05-large.png" alt="Fifth slide">
-          </div>
+        <!-- Descripción a la derecha -->
+        <div class="col-md-6 portfolio__project-description">
+          <h4>MoodShare App</h4>
+          <p>Aplicación de compartición de estados de ánimo en tiempo real.
+            <a href="https://github.com/sebastianvillegas7" target="_blank">Ver en GitHub</a>
+          </p>
         </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#moodshareCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#moodshareCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </button>
       </div>
-
-    </div>
-
-    <!-- Descripción a la derecha -->
-    <div class="col-md-6 portfolio__project-description">
-      <h4>MoodShare App</h4>
-      <p>Aplicación de compartición de estados de ánimo en tiempo real.
-        <a href="https://github.com/sebastianvillegas7" target="_blank">Ver en GitHub</a>
-      </p>
-    </div>
-  </div>
 
       <!-- Agenda App -->
       <div *ngIf="selectedProject === 2" class="col-md-12 d-flex">
@@ -100,7 +106,9 @@
           </p>
         </div>
       </div>
-    </div>
 
+    </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </div>
