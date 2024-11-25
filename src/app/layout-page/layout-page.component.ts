@@ -10,7 +10,7 @@ export class LayoutPageComponent {
 
   toggleTheme(): void {
     this.isDarkMode = !this.isDarkMode;
-    const theme = this.isDarkMode ? 'dark' : 'light';
+    const theme = this.isDarkMode ? 'light' : 'dark';
     document.documentElement.setAttribute('data-theme', theme);
   }
 }

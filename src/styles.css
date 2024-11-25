@@ -12,20 +12,20 @@ html, body {
 
 /* Variables para el modo claro */
 :root {
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --card-bg: rgba(255, 255, 255, 0.8);
-  --btn-bg: #000000;
-  --btn-text: #ffffff;
-}
-
-/* Variables para el modo oscuro */
-[data-theme='dark'] {
   --bg-color: #121212;
   --text-color: #ffffff;
   --card-bg: rgba(18, 18, 18, 0.8);
   --btn-bg: #ffffff;
   --btn-text: #000000;
+}
+
+/* Variables para el modo oscuro */
+[data-theme='light'] {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --btn-bg: #000000;
+  --btn-text: #ffffff;
 }
 
 /* Uso de variables */
@@ -37,7 +37,7 @@ body {
 .btn-stroked {
   background-color: transparent;
   color: var(--btn-bg);
-  border-color: var(--btn-text);
+  border-color: var(--btn-bg);
 }
 
 .btn-stroked:hover {
@@ -45,4 +45,9 @@ body {
   color: var(--btn-text);
 }
 
-
+/* Botón seleccionado */
+.btn-stroked.selected {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border-color: var(--btn-text);
+}

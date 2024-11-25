@@ -3,24 +3,25 @@
     <h2>PORTFOLIO</h2>
 
     <div id="portfolio__button-group">
-      <button type="button" class="btn"
-        [ngClass]="{'btn-dark': selectedProject === 1, 'btn-outline-light': selectedProject !== 1}"
+      <button type="button" class="btn btn-stroked"
+        [class.selected]="selectedProject === 1"
         (click)="showProject(1)">
         MoodShare App
       </button>
 
-      <button type="button" class="btn"
-        [ngClass]="{'btn-dark': selectedProject === 2, 'btn-outline-light': selectedProject !== 2}"
+      <button type="button" class="btn btn-stroked"
+        [class.selected]="selectedProject === 2"
         (click)="showProject(2)" style="margin-left: 20px;">
         Agenda App
       </button>
 
-      <button type="button" class="btn"
-        [ngClass]="{'btn-dark': selectedProject === 3, 'btn-outline-light': selectedProject !== 3}"
+      <button type="button" class="btn btn-stroked"
+        [class.selected]="selectedProject === 3"
         (click)="showProject(3)" style="margin-left: 20px;">
         Más...
       </button>
     </div>
+
 
     <!-- Contenedor de proyectos con un tamaño fijo -->
     <div class="row project-container">

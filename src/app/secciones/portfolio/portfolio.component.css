@@ -1,6 +1,5 @@
 #portfolio {
   position: relative;
-
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,7 +16,6 @@
   font-weight: 800;
   font-size: 3rem;
   font-style: normal;
-  color: rgb(207, 207, 207);
   letter-spacing: 6px;
   margin-bottom: 60px;
   margin-top: 80px;
@@ -25,7 +23,6 @@
 
 #portfolio__button-group {
   text-align: center;
-  color: rgb(207, 207, 207);
   margin-bottom: 10px;
 }
 
@@ -45,7 +42,6 @@
   font-size: 20px;
 }
 
-/* Contenedor de proyectos con un tamaño fijo */
 .project-container {
   min-height: 400px;
   max-height: 400px;
@@ -55,7 +51,6 @@
   justify-content: center;
   padding: 20px;
   box-sizing: border-box;
-  /* border: 1px solid white; */
 }
 
 .project-image img {

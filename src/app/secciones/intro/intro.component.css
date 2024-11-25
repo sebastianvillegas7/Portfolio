@@ -1,7 +1,7 @@
 /* Estilos generales */
 #intro {
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,13 +11,16 @@
   background: none;
 }
 
+.aver{
+  margin-left: 20px;
+}
+
 .title {
   font-family: "League Spartan", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-size: 5rem;
-  color: white;
   letter-spacing: 4px;
 }
 
@@ -27,32 +30,31 @@
   font-weight: 200;
   font-size: 2rem;
   font-style: normal;
-  color: white;
   letter-spacing: 2px;
 }
 
 .vertical-buttons {
   margin-top: 100px;
-  margin-left: 30px;
-  position: absolute; /* Mantiene los botones en una posición fija */
+  margin-left: 40px;
+  position: absolute;
   left: 0;
-  top: 50%; /* Centro vertical */
-  transform: translateY(-50%); /* Centrar verticalmente */
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
-  flex-direction: column; /* Colocar botones uno debajo del otro */
+  flex-direction: column;
 }
 
 .vertical-buttons .btn {
-  transform: rotate(-90deg); /* Rotar texto de abajo hacia arriba */
-  transform-origin: left center; /* Mantener el texto pegado al borde */
-  margin-bottom: 20px; /* Espacio entre los botones */
-  padding: 10px 0; /* Espacio interno */
-  min-width: 120px; /* Ancho mínimo para los botones */
-  height: 50px; /* Establecer altura para asegurar espacio */
-  display: flex; /* Usar flexbox para centrar el texto */
-  align-items: center; /* Centrar verticalmente el texto dentro del botón */
-  justify-content: center; /* Centrar horizontalmente el texto dentro del botón */
-  white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
+  transform: rotate(-90deg);
+  transform-origin: left center;
+  margin-bottom: 16px;
+  padding: 10px 0;
+  min-width: 120px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
   margin-bottom: 130px;
 }
 
@@ -64,30 +66,9 @@
   font-family: "Raleway", serif;
   font-weight: 600;
   text-decoration: none;
-  color: #ffffff;
-  border: 1px 0px 1px 1px solid #1f1f1f;
   transition: all 0.3s ease;
   border-radius: 0;
   display: flex; /* Permitir que el contenido se alinee correctamente */
   justify-content: center; /* Centrar el texto dentro del botón */
   align-items: center; /* Centrar verticalmente el texto dentro del botón */
-}
-
-.btn-primary {
-  border-color: #b8b8b8;
-}
-
-.btn-primary:hover {
-  background-color: rgba(80, 104, 235, 0.206);
-  color: #ffffff;
-}
-
-.btn-outline-primary {
-  color: white;
-  border-color: rgb(121, 121, 121);
-}
-
-.btn-outline-primary:hover {
-  background-color: rgba(255, 255, 255, 0.206);
-  color: #ffffff;
 }
