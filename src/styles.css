@@ -3,10 +3,46 @@ html, body {
   -webkit-font-smoothing: antialiased !important;
   margin: 0;
   padding: 0;
-  color: #555;
   font-weight: 400;
   width: 100% !important;
   height: 100% !important;
   box-sizing: border-box;
   overflow-x: hidden;
 }
+
+/* Variables para el modo claro */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --btn-bg: #000000;
+  --btn-text: #ffffff;
+}
+
+/* Variables para el modo oscuro */
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --card-bg: rgba(18, 18, 18, 0.8);
+  --btn-bg: #ffffff;
+  --btn-text: #000000;
+}
+
+/* Uso de variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.btn-stroked {
+  background-color: transparent;
+  color: var(--btn-bg);
+  border-color: var(--btn-text);
+}
+
+.btn-stroked:hover {
+  background-color: var(--text-color);
+  color: var(--btn-text);
+}
+
+

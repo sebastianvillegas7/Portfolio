@@ -1,4 +1,10 @@
 <div class="custom-container">
+  <div class="theme-toggle text-end p-3">
+    <button class="btn btn-outline-light" (click)="toggleTheme()">
+      {{ isDarkMode ? 'Modo Claro' : 'Modo Oscuro' }}
+    </button>
+  </div>
+
   <!-- Introducción -->
   <header class="row">
     <div class="col">
