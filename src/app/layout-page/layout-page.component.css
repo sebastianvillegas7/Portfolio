@@ -26,11 +26,12 @@
 #footer {
   width: 100%;
   padding: 0;
+  margin-bottom: 10px;
 }
 
 #footer p {
   color: #aeacac;
-  font-size: 0.7em;
+  font-size: 1em;
   margin: 0;
   padding: 0;
 }

@@ -3,84 +3,117 @@
     <h2>PORTFOLIO</h2>
 
     <div id="portfolio__button-group">
-      <button type="button" class="btn btn-stroked"
-        [class.selected]="selectedProject === 1"
-        (click)="showProject(1)">
+      <button type="button" class="btn btn-stroked" [class.selected]="selectedProject === 1" (click)="showProject(1)">
         MoodShare App
       </button>
 
-      <button type="button" class="btn btn-stroked"
-        [class.selected]="selectedProject === 2"
-        (click)="showProject(2)" style="margin-left: 20px;">
+      <button type="button" class="btn btn-stroked" [class.selected]="selectedProject === 2" (click)="showProject(2)"
+        style="margin-left: 20px;">
         Agenda App
       </button>
 
-      <button type="button" class="btn btn-stroked"
-        [class.selected]="selectedProject === 3"
-        (click)="showProject(3)" style="margin-left: 20px;">
+      <button type="button" class="btn btn-stroked" [class.selected]="selectedProject === 3" (click)="showProject(3)"
+        style="margin-left: 20px;">
         Más...
       </button>
     </div>
 
 
-    <!-- Contenedor de proyectos con un tamaño fijo -->
-    <div class="row project-container">
+    <!-- Contenedor de proyectos -->
+    <div class="project-container">
       <!-- MoodShare App con carrusel de imágenes -->
-      <div *ngIf="selectedProject === 1" class="col-md-12 d-flex">
-        <!-- Carrusel de imágenes a la izquierda -->
-        <div class="col-md-6 project-image" style="transform: scale(1.02); cursor: pointer;">
+      <div *ngIf="selectedProject === 1" class="col-md-12">
+        <!-- Fila superior -->
+        <!-- Contenedor de imágenes y descripción -->
+        <div class="row">
+          <!-- Columna izquierda: Carrusel de imágenes -->
+          <div class="col-md-6 project-image">
+            <div id="moodshareCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="0"></button>
+                <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="1" aria-label="1"></button>
+                <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="2" aria-label="2"></button>
+                <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="3" aria-label="3"></button>
+                <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="4" aria-label="4"></button>
+                <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="5" aria-label="5"></button>
+              </div>
 
-          <div id="moodshareCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="0"></button>
-              <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="1" aria-label="1"></button>
-              <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="2" aria-label="2"></button>
-              <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="3" aria-label="3"></button>
-              <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="4" aria-label="4"></button>
-              <button type="button" data-bs-target="#moodshareCarousel" data-bs-slide-to="5" aria-label="5"></button>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="../../../assets/img/portfolio/00-large.png" alt="0">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../../assets/img/portfolio/01-large.png" alt="1">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../../assets/img/portfolio/02-large.png" alt="2">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../../assets/img/portfolio/03-large.png" alt="3">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../../assets/img/portfolio/04-large.png" alt="4">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="../../../assets/img/portfolio/05-large.png" alt="5">
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#moodshareCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#moodshareCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
             </div>
+          </div>
 
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="../../../assets/img/portfolio/00-large.png" alt="0">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../../../assets/img/portfolio/01-large.png" alt="1">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../../../assets/img/portfolio/02-large.png" alt="2">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../../../assets/img/portfolio/03-large.png" alt="3">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../../../assets/img/portfolio/04-large.png" alt="4">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="../../../assets/img/portfolio/05-large.png" alt="5">
-              </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#moodshareCarousel"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#moodshareCarousel"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
+          <!-- Columna derecha: Descripción del proyecto -->
+          <div class="col-md-6 portfolio__project-description">
+            <h4>MoodShare App</h4>
+            <p>MoodShare es una aplicación inspirada en mi amor por la música y el deseo de compartirlo con los demás.
+              Su
+              objetivo principal es ofrecer una plataforma para compartir gustos musicales con otros usuarios, por
+              ejemplo,
+              entre los empleados de una compañía, alumnos de una institución, etc.</p>
           </div>
         </div>
 
-        <!-- Descripción a la derecha -->
-        <div class="col-md-6 portfolio__project-description">
-          <h4>MoodShare App</h4>
-          <p>Aplicación de compartición de estados de ánimo en tiempo real.
-            <a href="https://github.com/sebastianvillegas7" target="_blank">Ver en GitHub</a>
-          </p>
+
+        <div class="row mt-4">
+          <div class="col-md-12">
+            <div class="card tech-card mt-4">
+              <div class="card-body">
+                <h5 class="card-title">Tecnologías usadas</h5>
+                <div class="tech-carousel-container">
+                  <div class="tech-carousel">
+                    <img src="../../../assets/img/tecs/angular.png" alt="Angular" class="tech-logo">
+                    <img src="../../../assets/img/tecs/material.png" alt="Angular Material" class="tech-logo">
+                    <img src="../../../assets/img/tecs/SpringBoot.png" alt="Spring Boot" class="tech-logo">
+                    <img src="../../../assets/img/tecs/oracle.png" alt="Oracle" class="tech-logo">
+                    <img src="../../../assets/img/tecs/javascript.png" alt="JavaScript" class="tech-logo">
+                    <img src="../../../assets/img/tecs/mysql.png" alt="MySQL" class="tech-logo">
+                    <img src="../../../assets/img/tecs/vsc.png" alt="Visual Studio Code" class="tech-logo">
+                    <img src="../../../assets/img/tecs/github.png" alt="GitHub" class="tech-logo">
+                    <!-- Repite las mismas imágenes para lograr un efecto continuo -->
+                    <img src="../../../assets/img/tecs/angular.png" alt="Angular" class="tech-logo">
+                    <img src="../../../assets/img/tecs/material.png" alt="Angular Material" class="tech-logo">
+                    <img src="../../../assets/img/tecs/SpringBoot.png" alt="Spring Boot" class="tech-logo">
+                    <img src="../../../assets/img/tecs/oracle.png" alt="Oracle" class="tech-logo">
+                    <img src="../../../assets/img/tecs/javascript.png" alt="JavaScript" class="tech-logo">
+                    <img src="../../../assets/img/tecs/mysql.png" alt="MySQL" class="tech-logo">
+                    <img src="../../../assets/img/tecs/vsc.png" alt="Visual Studio Code" class="tech-logo">
+                    <img src="../../../assets/img/tecs/github.png" alt="GitHub" class="tech-logo">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
