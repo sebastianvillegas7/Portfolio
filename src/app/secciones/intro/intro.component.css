@@ -59,7 +59,7 @@
 }
 
 .btn-primary, .btn-outline-primary {
-  padding: 10px; /* Ajustar padding para que no se corten */
+  padding: 10px;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -68,7 +68,7 @@
   text-decoration: none;
   transition: all 0.3s ease;
   border-radius: 0;
-  display: flex; /* Permitir que el contenido se alinee correctamente */
-  justify-content: center; /* Centrar el texto dentro del botón */
-  align-items: center; /* Centrar verticalmente el texto dentro del botón */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

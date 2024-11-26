@@ -8,6 +8,22 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 export class PortfolioComponent {
   selectedProject: number = 1;
 
+  imgsMood = [
+    { src: '../../../assets/img/portfolio/mood/00-large.png', alt: '0' },
+    { src: '../../../assets/img/portfolio/mood/01-large.png', alt: '1' },
+    { src: '../../../assets/img/portfolio/mood/02-large.png', alt: '2' },
+    { src: '../../../assets/img/portfolio/mood/03-large.png', alt: '3' },
+    { src: '../../../assets/img/portfolio/mood/04-large.png', alt: '4' },
+  ];
+
+  imgsPancho = [
+    { src: '../../../assets/img/portfolio/pancho/01.png', alt: '0' },
+    { src: '../../../assets/img/portfolio/pancho/02.png', alt: '1' },
+    { src: '../../../assets/img/portfolio/pancho/03.png', alt: '2' },
+    { src: '../../../assets/img/portfolio/pancho/04.png', alt: '3' },
+    { src: '../../../assets/img/portfolio/pancho/05.png', alt: '4' },
+  ];
+
   tecnologias = [
     { src: '../../../assets/img/tecs/angular.png', alt: 'Angular' },
     { src: '../../../assets/img/tecs/material.png', alt: 'Angular Material' },

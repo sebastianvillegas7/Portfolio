@@ -36,6 +36,7 @@ body {
 
 .btn-stroked {
   background-color: transparent;
+  letter-spacing: 1px;
   color: var(--btn-bg);
   border-color: var(--btn-bg);
 }

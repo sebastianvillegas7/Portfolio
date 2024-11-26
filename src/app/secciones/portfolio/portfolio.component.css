@@ -1,3 +1,4 @@
+/* Estilos generales del portfolio */
 #portfolio {
   position: relative;
   min-height: 100vh;
@@ -13,20 +14,25 @@
   margin-bottom: 30px;
 }
 
-.btn-stroked {
+#portfolio__button-group button {
+  text-transform: uppercase;
+}
+
+/* Estilos del proyecto */
+.project-container {
+  min-height: 400px;
+  max-height: 400px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-project {
   font-weight: 400;
   margin-top: 20px;
   border: 2px solid;
   padding: 10px 20px;
   font-size: 15px;
   transition: all 0.3s ease;
-}
-
-.project-container {
-  min-height: 400px;
-  max-height: 400px;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .project-content {
@@ -44,7 +50,21 @@
   transform: scale(1.02);
 }
 
+.portfolio__project-description {
+  margin-top: 20px;
+}
+
+.portfolio__project-description h4 {
+  font-family: "Parkinsans", serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 4px;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
 .portfolio__project-description p {
+  font-family: "Parkinsans", serif;
+  letter-spacing: 1px;
   font-size: 1em;
   align-items: center;
   justify-content: center;
@@ -53,19 +73,18 @@
   padding-right: 20px;
 }
 
-.img-btn-git {
-  width: 30px;
-  height: 30px;
-  color: var(--text-color);
-  margin-right: 6px;
-}
-
+/* Botón e Imágen de los botones de cada proyecto */
 .btn-dark {
   background-color: transparent;
   color: var(--text-color);
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   border: 1px solid var(--text-color);
-  width: 40%;
+  width: 60%;
+  font-family: "Parkinsans", serif;
   justify-content: center;
+  padding: 8px 8px;
 }
 
 .btn-dark:hover {
@@ -73,13 +92,21 @@
   color: var(--btn-text);
 }
 
-/* Estilo para la card de tecnologías */
-.tech-carrousel-container {
+.img-btn {
+  width: auto;
+  height: 40px;
+  margin-right: 6px;
+}
+
+
+/* Estilos del contenedor de los slides para mood, y cards para Pancho */
+.bottom-container {
   margin-top: 0px;
   padding: 0px;
   position: relative;
 }
 
+/* Estilo para la card de tecnologías */
 .tech-card {
   border: none;
   width: 80%;
@@ -88,8 +115,8 @@
   background-color: var(--card-bg);
 }
 
-.tech-card .card-title {
-  font-family: "Raleway", serif;
+.tech-card .tech-card-title {
+  font-family: "Parkinsans", serif;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 0.8rem;
@@ -98,7 +125,7 @@
   margin-top: 0px;
 }
 
-.card-body {
+.tech-card-body {
   padding: 0px;
   background-color: var(--card-bg);
 }
@@ -115,3 +142,37 @@
   justify-content: center;
 }
 
+/* Estilos de las cards del proyecto Pancho Viña */
+.labor-card {
+  background-color: transparent;
+  color: var(--text-color);
+  border-radius: 10px;
+}
+
+.labor-card-title {
+  font-family: "Parkinsans", serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 4px;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.labor-card-title img {
+  align-items: center;
+}
+
+.labor-card-body {
+  font-family: "Parkinsans", serif;
+  letter-spacing: 1px;
+  font-size: 1em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.labor-card-icons {
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
+}
