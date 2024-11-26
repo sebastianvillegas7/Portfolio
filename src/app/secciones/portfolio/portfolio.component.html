@@ -9,7 +9,7 @@
 
       <button type="button" class="btn btn-stroked" [class.selected]="selectedProject === 2" (click)="showProject(2)"
         style="margin-left: 20px;">
-        Agenda App
+        Pancho Viña
       </button>
 
       <button type="button" class="btn btn-stroked" [class.selected]="selectedProject === 3" (click)="showProject(3)"
@@ -55,9 +55,6 @@
                 <div class="carousel-item">
                   <img class="d-block w-100" src="../../../assets/img/portfolio/04-large.png" alt="4">
                 </div>
-                <div class="carousel-item">
-                  <img class="d-block w-100" src="../../../assets/img/portfolio/05-large.png" alt="5">
-                </div>
               </div>
 
               <button class="carousel-control-prev" type="button" data-bs-target="#moodshareCarousel"
@@ -92,23 +89,9 @@
                 <h5 class="card-title">Tecnologías usadas</h5>
                 <div class="tech-carousel-container">
                   <div class="tech-carousel">
-                    <img src="../../../assets/img/tecs/angular.png" alt="Angular" class="tech-logo">
-                    <img src="../../../assets/img/tecs/material.png" alt="Angular Material" class="tech-logo">
-                    <img src="../../../assets/img/tecs/SpringBoot.png" alt="Spring Boot" class="tech-logo">
-                    <img src="../../../assets/img/tecs/oracle.png" alt="Oracle" class="tech-logo">
-                    <img src="../../../assets/img/tecs/javascript.png" alt="JavaScript" class="tech-logo">
-                    <img src="../../../assets/img/tecs/mysql.png" alt="MySQL" class="tech-logo">
-                    <img src="../../../assets/img/tecs/vsc.png" alt="Visual Studio Code" class="tech-logo">
-                    <img src="../../../assets/img/tecs/github.png" alt="GitHub" class="tech-logo">
-                    <!-- Repite las mismas imágenes para lograr un efecto continuo -->
-                    <img src="../../../assets/img/tecs/angular.png" alt="Angular" class="tech-logo">
-                    <img src="../../../assets/img/tecs/material.png" alt="Angular Material" class="tech-logo">
-                    <img src="../../../assets/img/tecs/SpringBoot.png" alt="Spring Boot" class="tech-logo">
-                    <img src="../../../assets/img/tecs/oracle.png" alt="Oracle" class="tech-logo">
-                    <img src="../../../assets/img/tecs/javascript.png" alt="JavaScript" class="tech-logo">
-                    <img src="../../../assets/img/tecs/mysql.png" alt="MySQL" class="tech-logo">
-                    <img src="../../../assets/img/tecs/vsc.png" alt="Visual Studio Code" class="tech-logo">
-                    <img src="../../../assets/img/tecs/github.png" alt="GitHub" class="tech-logo">
+                    <img *ngFor="let image of tecnologias" [src]="image.src" [alt]="image.alt" class="tech-logo">
+                    <img *ngFor="let image of tecnologias" [src]="image.src" [alt]="image.alt" class="tech-logo">
+                    <img *ngFor="let image of tecnologias" [src]="image.src" [alt]="image.alt" class="tech-logo">
                   </div>
                 </div>
               </div>
@@ -117,14 +100,14 @@
         </div>
       </div>
 
-      <!-- Agenda App -->
+      <!-- Pancho Viña -->
       <div *ngIf="selectedProject === 2" class="col-md-12 d-flex">
         <div class="col-md-6 project-image">
-          <img src="../../../assets/img/portfolio/03-large.jpg" alt="Agenda App">
-          <a href="https://github.com/tu-usuario/agenda-app" target="_blank">Ver en GitHub</a>
+          <img src="../../../assets/img/portfolio/pancho/01.png" alt="Pancho Viña">
+          <!-- <a href="https://github.com/tu-usuario/agenda-app" target="_blank">Ver en GitHub</a> -->
         </div>
         <div class="col-md-6 portfolio__project-description">
-          <h4>Agenda App</h4>
+          <h4>Pancho Viña</h4>
           <p>Aplicación de gestión de tareas y eventos.
           </p>
         </div>

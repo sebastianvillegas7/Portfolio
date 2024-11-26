@@ -7,14 +7,6 @@
   background: none;
 }
 
-/* Asegura que las columnas ocupen todo el espacio disponible */
-.row.align-items-center {
-  display: flex;
-  align-items: center;
-}
-
-
-
 #portfolio__button-group {
   text-align: center;
   margin-bottom: 10px;
@@ -62,44 +54,50 @@
 
 /* Estilo para la card de tecnologías */
 .tech-card {
-  width: 100%; /* Asegura que la card ocupe todo el ancho de la fila */
-  margin-top: 20px;
+  border: none;
+  width: 100%;
+  margin-top: 10px;
   background-color: var(--card-bg);
-  border: 1px solid var(--btn-bg);
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .tech-card .card-title {
+  font-family: "Raleway", serif;
+  letter-spacing: 4px;
   font-size: 1.2rem;
-  font-weight: bold;
   color: var(--text-color);
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 /* Estilo del contenedor del carrusel */
 .tech-carousel-container {
-  height: 90px; /* Ajusta según el tamaño de las imágenes */
+  height: 80px;
   width: 100%;
   overflow: hidden;
   position: relative;
   background: transparent;
 }
 
+/* Contenedor del carrusel */
+.tech-carousel-wrapper {
+  display: flex;
+  width: 100%;
+}
+
 /* Carrusel de imágenes */
 .tech-carousel {
   display: flex;
-  gap: 80px; /* Espacio entre imágenes */
-  animation: scroll-left 20s linear infinite;
+  gap: 80px;
+  width: calc(200%);
+  animation: scroll 40s linear infinite;
+  will-change: transform;
 }
 
 .tech-logo {
-  height: 60px; /* Ajusta según el tamaño deseado */
-  width: auto; /* Mantén la proporción de las imágenes */
+  height: 50px; /* Ajusta según el tamaño deseado */
+  flex-shrink: 0;
 }
 
-/* Animación para mover el carrusel */
-@keyframes scroll-left {
+@keyframes scroll {
   0% {
     transform: translateX(0);
   }
@@ -107,4 +105,3 @@
     transform: translateX(-100%);
   }
 }
-
