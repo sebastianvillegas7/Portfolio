@@ -10,22 +10,22 @@ html, body {
   overflow-x: hidden;
 }
 
-/* Variables para el modo claro */
+/* Variables para el modo dark */
 :root {
   --bg-color: #121212;
-  --text-color: #ffffff;
-  --card-bg: rgba(18, 18, 18, 0.8);
-  --btn-bg: #ffffff;
-  --btn-text: #000000;
+  --text-color: #e7e7e7;
+  --card-bg: #121212;
+  --btn-bg: #e7e7e7;
+  --btn-text: #121212;
 }
 
-/* Variables para el modo oscuro */
+/* Variables para el modo light */
 [data-theme='light'] {
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --card-bg: rgba(255, 255, 255, 0.8);
-  --btn-bg: #000000;
-  --btn-text: #ffffff;
+  --bg-color: #e7e7e7;
+  --text-color: #121212;
+  --card-bg: #e7e7e7;
+  --btn-bg: #121212;
+  --btn-text: #e7e7e7;
 }
 
 /* Uso de variables */
@@ -59,6 +59,6 @@ h2 {
   font-size: 3rem;
   font-style: normal;
   letter-spacing: 6px;
-  margin-bottom: 60px;
-  margin-top: 80px;
+  margin-bottom: 30px;
+  margin-top: 40px;
 }

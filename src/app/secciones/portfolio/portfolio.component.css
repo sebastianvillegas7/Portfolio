@@ -9,7 +9,8 @@
 
 #portfolio__button-group {
   text-align: center;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .btn-stroked {
@@ -21,87 +22,96 @@
   transition: all 0.3s ease;
 }
 
-#portfolio p {
-  font-size: 1em;
-}
-
 .project-container {
   min-height: 400px;
   max-height: 400px;
   width: 100%;
-  padding: 20px;
   box-sizing: border-box;
+}
+
+.project-content {
+  padding: 0px;
 }
 
 .project-image img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
-  margin-bottom: 10px;
   transition: all 0.3s ease-in-out;
 }
 
 .project-image img:hover {
   transform: scale(1.02);
 }
-.portfolio__project-description h4 {
-  margin-bottom: 10px;
-}
 
 .portfolio__project-description p {
-  font-size: 16px;
+  font-size: 1em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.img-btn-git {
+  width: 30px;
+  height: 30px;
+  color: var(--text-color);
+  margin-right: 6px;
+}
+
+.btn-dark {
+  background-color: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  width: 40%;
+  justify-content: center;
+}
+
+.btn-dark:hover {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
 }
 
 /* Estilo para la card de tecnologías */
+.tech-carrousel-container {
+  margin-top: 0px;
+  padding: 0px;
+  position: relative;
+}
+
 .tech-card {
   border: none;
-  width: 100%;
-  margin-top: 10px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px;
   background-color: var(--card-bg);
 }
 
 .tech-card .card-title {
   font-family: "Raleway", serif;
+  text-transform: uppercase;
   letter-spacing: 4px;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   color: var(--text-color);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  margin-top: 0px;
 }
 
-/* Estilo del contenedor del carrusel */
-.tech-carousel-container {
-  height: 80px;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  background: transparent;
+.card-body {
+  padding: 0px;
+  background-color: var(--card-bg);
 }
 
-/* Contenedor del carrusel */
-.tech-carousel-wrapper {
-  display: flex;
-  width: 100%;
-}
-
-/* Carrusel de imágenes */
-.tech-carousel {
-  display: flex;
-  gap: 80px;
-  width: calc(200%);
-  animation: scroll 40s linear infinite;
-  will-change: transform;
-}
-
+/* Estilo para las imágenes del carrusel */
 .tech-logo {
   height: 50px; /* Ajusta según el tamaño deseado */
-  flex-shrink: 0;
+  max-width: 100%;
+  object-fit: contain;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+.carousel-inner .techs {
+  display: flex;
+  justify-content: center;
 }
+

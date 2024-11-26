@@ -25,7 +25,7 @@
       <div *ngIf="selectedProject === 1" class="col-md-12">
         <!-- Fila superior -->
         <!-- Contenedor de imágenes y descripción -->
-        <div class="row">
+        <div class="row project-content">
           <!-- Columna izquierda: Carrusel de imágenes -->
           <div class="col-md-6 project-image">
             <div id="moodshareCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -71,27 +71,35 @@
           </div>
 
           <!-- Columna derecha: Descripción del proyecto -->
-          <div class="col-md-6 portfolio__project-description">
+          <div class="col-md-6 portfolio__project-description"
+            style="padding: 0px; margin-bottom: 0px; margin: 0 auto;">
             <h4>MoodShare App</h4>
             <p>MoodShare es una aplicación inspirada en mi amor por la música y el deseo de compartirlo con los demás.
               Su
               objetivo principal es ofrecer una plataforma para compartir gustos musicales con otros usuarios, por
               ejemplo,
               entre los empleados de una compañía, alumnos de una institución, etc.</p>
+              <a href="https://github.com/sebastianvillegas7/MoodShareFrontEnd" target="_blank"
+                class="btn btn-dark align-items-center">
+                <img src="assets/img/tecs/git-icon.png" alt="GitHub" class="img-btn-git" />
+                Ver Repositorio en GitHub
+              </a>
           </div>
         </div>
 
-
         <div class="row mt-4">
-          <div class="col-md-12">
+          <div class="col-md-12 tech-carrousel-container">
             <div class="card tech-card mt-4">
               <div class="card-body">
-                <h5 class="card-title">Tecnologías usadas</h5>
-                <div class="tech-carousel-container">
-                  <div class="tech-carousel">
-                    <img *ngFor="let image of tecnologias" [src]="image.src" [alt]="image.alt" class="tech-logo">
-                    <img *ngFor="let image of tecnologias" [src]="image.src" [alt]="image.alt" class="tech-logo">
-                    <img *ngFor="let image of tecnologias" [src]="image.src" [alt]="image.alt" class="tech-logo">
+                <h5 class="card-title">Tecnologías utilizadas</h5>
+                <div id="techCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                  <div class="carousel-inner techs">
+                    <div class="carousel-item" *ngFor="let group of groupImages(tecnologias, 5); let i = index"
+                      [class.active]="i === 0">
+                      <div class="d-flex justify-content-around">
+                        <img *ngFor="let image of group" [src]="image.src" [alt]="image.alt" class="tech-logo mx-2" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -102,7 +110,7 @@
 
       <!-- Pancho Viña -->
       <div *ngIf="selectedProject === 2" class="col-md-12 d-flex">
-        <div class="col-md-6 project-image">
+        <div class="col-md-6 project-image" style="padding: 0px; margin-bottom: 0px;">
           <img src="../../../assets/img/portfolio/pancho/01.png" alt="Pancho Viña">
           <!-- <a href="https://github.com/tu-usuario/agenda-app" target="_blank">Ver en GitHub</a> -->
         </div>
