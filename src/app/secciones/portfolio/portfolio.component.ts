@@ -1,12 +1,11 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-
+import { Component } from '@angular/core';
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css'],
 })
 export class PortfolioComponent {
-  selectedProject: number = 1;
+  selectedProject: number = 2;
 
   imgsMood = [
     { src: '../../../assets/img/portfolio/mood/00-large.png', alt: '0' },

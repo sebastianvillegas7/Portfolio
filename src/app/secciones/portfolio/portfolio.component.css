@@ -8,6 +8,14 @@
   background: none;
 }
 
+.portfolio-item {
+  display: block; /* Asegúrate de que el contenedor sea visible */
+  width: 100%; /* O el ancho que necesites */
+  height: auto; /* Ajusta según el contenido */
+  opacity: 1; /* Esto es importante si estás aplicando transiciones */
+  transition: opacity 0.6s ease-in-out; /* Para efectos suaves */
+}
+
 #portfolio__button-group {
   text-align: center;
   margin-top: 0px;
