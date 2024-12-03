@@ -1,51 +1,91 @@
-<div id="contact">
-  <div class="container">
-    <h2>CONTACTO</h2>
+<img src="assets/img/cta-bg.jpg" alt="">
 
-    <div class="row">
-      <!-- Imagen y texto -->
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-sm-6">
-            <img src="assets/img/about.jpg" class="img-responsive" alt="Imagen sobre mí">
-          </div>
-          <div class="col-sm-6">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at.</p>
-            <p>Para consultas o colaboraciones, por favor contáctame a través del correo <strong>infoARROBAcompany.com</strong>.</p>
-          </div>
+<div class="container">
+  <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+    <!-- Contact Section -->
+    <div id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <span>Contact</span>
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+              data-aos-delay="200">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Address</h3>
+              <p>A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+              data-aos-delay="300">
+              <i class="bi bi-telephone"></i>
+              <h3>Call Us</h3>
+              <p>+1 5589 55488 55</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up"
+              data-aos-delay="400">
+              <i class="bi bi-envelope"></i>
+              <h3>Email Us</h3>
+              <p>info€€€€example.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
         </div>
+
+        <div class="row gy-4 mt-1">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+
+          </div><!-- End Google Maps -->
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
+              data-aos-delay="400">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
       </div>
 
-      <!-- Formulario -->
-      <div class="col-md-6">
-        <div class="contact-card p-4">
-          <form>
-            <div class="form-group md-3">
-              <label for="name"></label>
-              <input type="text" class="form-control" id="name" placeholder="Nombre" required>
-            </div>
-
-            <div class="form-group md-3">
-              <label for="email"></label>
-              <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
-            </div>
-
-            <div class="form-group md-3">
-              <label for="tel"></label>
-              <input type="tel" class="form-control" id="tel" placeholder="Teléfono (opcional)">
-            </div>
-
-            <div class="form-group md-3">
-              <label for="message"></label>
-              <textarea class="form-control" id="message" rows="4" maxlength="250" placeholder="Escribe tu mensaje" required></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-stroked">Enviar</button>
-          </form>
-        </div>
-      </div>
-
-
-    </div>
+    </div><!-- /Contact Section -->
   </div>
-</div>
