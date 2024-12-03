@@ -22,10 +22,6 @@
   margin-bottom: 30px;
 }
 
-#portfolio__button-group button {
-  text-transform: uppercase;
-}
-
 /* Estilos del proyecto */
 .project-container {
   min-height: 400px;
@@ -34,14 +30,6 @@
   box-sizing: border-box;
 }
 
-.btn-project {
-  font-weight: 400;
-  margin-top: 20px;
-  border: 2px solid;
-  padding: 10px 20px;
-  font-size: 15px;
-  transition: all 0.3s ease;
-}
 
 .project-content {
   padding: 0px;
@@ -63,7 +51,7 @@
 }
 
 .portfolio__project-description h4 {
-  font-family: "Parkinsans", serif;
+  font-family: var(--default-font);
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 4px;
@@ -71,7 +59,7 @@
   color: var(--text-color);
 }
 .portfolio__project-description p {
-  font-family: "Parkinsans", serif;
+  font-family: var(--default-font);
   letter-spacing: 1px;
   font-size: 1em;
   align-items: center;
@@ -90,7 +78,7 @@
   text-transform: uppercase;
   border: 1px solid var(--text-color);
   width: 60%;
-  font-family: "Parkinsans", serif;
+  font-family: var(--default-font);
   justify-content: center;
   padding: 8px 8px;
 }
@@ -124,7 +112,7 @@
 }
 
 .tech-card .tech-card-title {
-  font-family: "Parkinsans", serif;
+  font-family: var(--default-font);
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 0.8rem;
@@ -158,7 +146,7 @@
 }
 
 .labor-card-title {
-  font-family: "Parkinsans", serif;
+  font-family: var(--default-font);
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 4px;
@@ -171,7 +159,7 @@
 }
 
 .labor-card-body {
-  font-family: "Parkinsans", serif;
+  font-family: var(--default-font);
   letter-spacing: 1px;
   font-size: 1em;
   align-items: center;
