@@ -7,11 +7,11 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --background-color: #dadada; /* Background color for the entire website, including individual sections */
+  --background-color: #a5a5a5; /* Background color for the entire website, including individual sections */
   --default-color: #3a3a3a; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #191919; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #1634cc; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #b5b5b5; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --surface-color: #838282; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
@@ -60,11 +60,11 @@ a {
   transition: 0.3s;
 }
 
-a:hover {
+a:hover, .boton-go:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
   text-decoration: none;
+  background-color: var(--surface-color);
 }
-
 
 h2,
 h3,
@@ -329,7 +329,6 @@ h6 {
   color: var(--default-color);
   background-color: var(--background-color);
   font-size: 14px;
-  padding-bottom: 50px;
   position: relative;
 }
 
@@ -466,9 +465,7 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 60px 0;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 80px;
   overflow: clip;
 }
 
@@ -486,7 +483,6 @@ section,
 .section-title {
   text-align: center;
   padding: 30px 0;
-
   position: relative;
 }
 
@@ -618,7 +614,7 @@ section,
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  padding: 120px 0;
+  padding: 60px 0;
   position: relative;
   clip-path: inset(0);
 }
@@ -660,6 +656,14 @@ section,
 /*--------------------------------------------------------------
 # Portfolio Section
 --------------------------------------------------------------*/
+.boton-go {
+  width: 80%;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
 .portfolio .portfolio-filters {
   padding: 0;
   margin: 0 auto 60px auto;
@@ -670,10 +674,13 @@ section,
 .portfolio .portfolio-filters button {
   cursor: pointer;
   display: inline-block;
-  padding: 20px 20px 20px 20px;
+  padding: 15px;
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
+  background: none;
+  border: none;
+  letter-spacing: 1px;
   font-weight: 500;
   line-height: 1;
   margin-bottom: 5px;
@@ -685,6 +692,7 @@ section,
 .portfolio .portfolio-filters button.selected {
   color: var(--contrast-color);
   background-color: var(--accent-color);
+  font-style: bold;
 }
 
 .portfolio .portfolio-filters li:first-child {
@@ -761,40 +769,6 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-item {
-  background-color: var(--surface-color);
-  padding: 20px 0 30px 0;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-}
-
-.contact .info-item i {
-  font-size: 20px;
-  color: var(--accent-color);
-  width: 56px;
-  height: 56px;
-  font-size: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  transition: all 0.3s ease-in-out;
-  border-radius: 50%;
-  border: 2px dotted color-mix(in srgb, var(--accent-color), transparent 40%);
-}
-
-.contact .info-item h3 {
-  font-size: 20px;
-  font-size: 18px;
-  font-weight: 700;
-  margin: 10px 0;
-}
-
-.contact .info-item p {
-  padding: 0;
-  margin-bottom: 0;
-  font-size: 14px;
-}
-
 .contact .php-email-form {
   background-color: var(--surface-color);
   height: 100%;

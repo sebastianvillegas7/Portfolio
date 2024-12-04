@@ -1,26 +1,25 @@
 <!-- Section Title -->
-<div class="container section-title" data-aos="fade-up">
+<div class="container section-title" data-aos="fade-up" style="margin-top: 60px;">
   <span>Portfolio</span>
   <h2>Portfolio</h2>
 </div><!-- End Section Title -->
 
-<div class="container">
+<div class="container" style="margin-bottom: 80px;">
 
   <div data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
     <div class="portfolio-filters" data-aos="fade-up" data-aos-delay="100">
-      <button type="button" class="btn-project portfolio portfolio-filters" [class.selected]="selectedProject === 2"
-        (click)="showProject(2)">
+      <button type="button" [class.selected]="selectedProject === 2" (click)="showProject(2)">
         Pancho Viña
       </button>
 
-      <button type="button" class="btn-project" [class.selected]="selectedProject === 1"
-        (click)="showProject(1)" style="margin-left: 20px;">
+      <button type="button" [class.selected]="selectedProject === 1" (click)="showProject(1)"
+        style="margin-left: 20px;">
         MoodShare App
       </button>
 
-      <button type="button" class="btn-project" [class.selected]="selectedProject === 3"
-        (click)="showProject(3)" style="margin-left: 20px;">
+      <button type="button" [class.selected]="selectedProject === 3" (click)="showProject(3)"
+        style="margin-left: 20px;">
         Más...
       </button>
     </div>
@@ -64,8 +63,7 @@
           </div>
 
           <!-- Columna derecha: Descripción del proyecto -->
-          <div class="col-md-6 portfolio__project-description"
-            style="padding: 0px; margin-bottom: 0px; margin: 0 auto;">
+          <div class="col-md-6 portfolio__project-description">
             <h4>MoodShare App</h4>
             <p>MoodShare es una aplicación inspirada en mi amor por la música y el deseo de compartirlo con los demás.
               Su
@@ -74,19 +72,20 @@
               entre los empleados de una compañía, alumnos de una institución, etc.<br />
               Desarrollada con Angular 16, Spring Boot y el servicio API de Discogs.
             </p>
-            <a href="https://github.com/sebastianvillegas7/MoodShareFrontEnd" target="_blank"
-              class="btn btn-dark align-items-center">
-              <img src="assets/img/tecs/git-icon.png" alt="GitHub" class="img-btn" />
-              Ver Repositorio en GitHub
-            </a>
+            <div class="row boton-go justify-content-center">
+              <a href="https://github.com/sebastianvillegas7/MoodShareFrontEnd" target="_blank" class="btn-dark">
+                <img src="assets/img/tecs/git-icon.png" alt="GitHub" class="img-btn" />
+                Ver Repositorio en GitHub
+              </a>
+            </div>
           </div>
         </div>
 
+        <!-- Tarjetas tecs utilizadas -->
         <div class="row mt-4">
           <div class="col-md-12 tech-carrousel-container">
             <div class="card tech-card mt-3">
               <div class="tech-card-body">
-                <h5 class="tech-card-title">Tecnologías utilizadas</h5>
                 <div id="techCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
                   <div class="carousel-inner techs">
                     <div class="carousel-item" *ngFor="let group of groupImages(tecnologias, 5); let i = index"
@@ -138,22 +137,24 @@
           </div>
 
           <!-- Columna derecha: Descripción del proyecto -->
-          <div class="col-md-6 portfolio__project-description"
-            style="padding: 0px; margin-bottom: 0px; margin: 0 auto;">
+          <div class="col-md-6 portfolio__project-description justify-content-center">
             <h4>Pancho Viña</h4>
             <p>Actualmente colaboro con esta tienda de vinos y productos gourmet en pleno crecimiento, ubicada en el
               corazón de Madrid. Mi labor se centra en la expansión de su presencia digital y el fortalecimiento de su
               marca en línea.
             </p>
-            <a href="https://www.panchovina.com" target="_blank" class="btn btn-dark align-items-center">
-              <img src="assets/img/tecs/pancho-icon.png" alt="Pancho Viña" class="img-btn" />
-              Visitar página web
-            </a>
+            <div class="row boton-go justify-content-center">
+              <a href="https://www.panchovina.com" target="_blank" class="btn-dark">
+                <img src="assets/img/tecs/pancho-icon.png" alt="Pancho Viña" class="img-btn" />
+                Visitar sitio web
+              </a>
+            </div>
           </div>
 
+          <!-- Tarjetas labors -->
           <div class="row mt-4">
             <div class="col-md-12 bottom-container">
-              <div class="d-flex justify-content-around">
+              <div class="d-flex justify-content-around" style="margin-top: 40px;">
                 <!-- Punto 1 -->
                 <div class="col-md-3">
                   <div class="card labor-card h-100 shadow-sm border-0">
