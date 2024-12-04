@@ -14,7 +14,7 @@
 }
 
 .project-content {
-  padding: 0px;
+  padding: 20px;
 }
 
 .project-image img {
@@ -127,6 +127,7 @@
   background-color: transparent;
   color: var(--text-color);
   border-radius: 10px;
+  padding: 20px;
 }
 
 .labor-card-title {
