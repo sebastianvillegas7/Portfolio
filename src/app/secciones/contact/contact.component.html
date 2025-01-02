@@ -32,18 +32,35 @@
 
           </div><!-- End Contact Card -->
 
-          <div class="col-lg-2" data-aos="fade-up" data-aos-delay="600">
-            <div>
-              <form action="https://api.web3forms.com/submit" method="POST" ngNoForm>
-                <input type="hidden" name="access_key" value="8f4ef6e0-3eb4-435a-a6c2-5317492bf385">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
 
-                <input type="text" name="nombre" placeholder="Tú nombre" required>
-                <input type="email" name="email" placeholder="Tú correo electrónico" required>
-                <textarea name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+              <div class="container-contact-form">
+                <div class="screen">
+                  <div class="screen-body">
+                    <div class="screen-body-item">
+                      <form class="app-form" (ngSubmit)="enviarFormulario(form)" #form="ngForm">
+                        <!-- <input type="hidden" name="access_key" value="8f4ef6e0-3eb4-435a-a6c2-5317492bf385"> -->
+                        <div class="app-form-group">
+                          <input class="app-form-control" type="text" name="nombre" placeholder="Tu nombre" required
+                            ngModel>
+                        </div>
 
-                <button type="submit">Submit Form</button>
-              </form>
-            </div>
+                        <div class="app-form-group">
+                          <input class="app-form-control" type="email" name="email" placeholder="Tu correo electrónico" required ngModel>
+                        </div>
+
+                        <div class="app-form-group message">
+                          <textarea rows="4" class="app-form-control" name="mensaje" placeholder="Escribe tu mensaje" required ngModel></textarea>
+                        </div>
+
+                        <div class="app-form-group buttons">
+                          <button type="submit" class="app-form-button">Enviar mensaje</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
           </div><!-- End Contact Form -->
 

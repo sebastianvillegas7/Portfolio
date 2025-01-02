@@ -1,3 +1,4 @@
+/* Estilos de la tarjeta (lado izquierdo) */
 .contact-card {
   display: flex;
   flex-direction: column;
@@ -43,4 +44,96 @@
 .contact-card-social-links a:hover {
   color: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+/* Estilos del formulario de contacto (lado derecho) */
+.container-contact-form {
+  flex: 0 1 350px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  background: #3e3e3e51;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+
+  z-index: -1;
+}
+
+.screen-body {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.screen-body-item {
+  flex: 1;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+
+.app-form-group.buttons {
+  margin-bottom: 0px;
+  margin-top: 20px;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: #666;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  cursor: pointer;
+  display: inline-block;
+  padding: 15px;
+  margin: 0;
+  font-size: 16px;
+  color: var(--contrast-color);
+  text-transform: uppercase;
+  background: none;
+  border: 2px solid var(--accent-color);
+  letter-spacing: 1px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  font-family: var(--heading-font);
+}
+
+.app-form-button:hover {
+  color: var(--heading-color);
+  background-color: var(--accent-color);
+  font-style: bold;
 }
